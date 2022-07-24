@@ -3,7 +3,7 @@ import { galleryItems } from './gallery-items.js';
 
 const galleryContainer = document.querySelector(".gallery");
 
-const createGallryConteiner = galleryItems
+const createGalleryConteiner = galleryItems
 .map( ({preview, original, description}) => {
     return `
 <div class="gallery__item">
@@ -18,7 +18,7 @@ const createGallryConteiner = galleryItems
 </div>`})
 .join("");
 
-galleryContainer.insertAdjacentHTML("afterbegin", createGallryConteiner);
+galleryContainer.insertAdjacentHTML("afterbegin", createGalleryConteiner);
 
 
 function selectImage (event) {
